@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "ic_movies_backend": {
+      "main": "src/ic_movies_backend/main.mo",
+      "type": "motoko"
+    },
+    "ic_movies_frontend": {
+      "dependencies": [
+        "ic_movies_backend"
+      ],
+      "source": [
+        "src/ic_movies_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "ic_movies_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
